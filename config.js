@@ -25,19 +25,25 @@ const CONFIG = {
   PORT: parseInt(process.env.PORT) || 3000,
   SESSION: process.env.SESSION || null,
   TZ: process.env.TZ || 'Africa/Nairobi',
+
   ANTICALL: parseBoolean(process.env.ANTICALL || 'off'),
   ANTIDELETE: parseBoolean(process.env.ANTIDELETE || 'on'),
   ANTIEDIT: parseBoolean(process.env.ANTIEDIT || 'on'),
+
   AUTO_READ: parseBoolean(process.env.AUTO_READ || 'off'),
   AUTO_VIEW: parseBoolean(process.env.AUTO_VIEW || 'on'),
   AUTO_LIKE: parseBoolean(process.env.AUTO_LIKE || 'on'),
+
   DM_PRESENCE: process.env.DM_PRESENCE || '',
   GRP_PRESENCE: process.env.GRP_PRESENCE || '',
+
   USER_LID: parseLids(process.env.USER_LID || ''),
+
   OWNER_NUMBER: process.env.OWNER_NUMBER || '',
-  OWNER_NAME: process.env.OWNER_NAME || 'FLASH-MD Owner',
-  BOT_NAME: process.env.BOT_NAME || 'Flash-Md-V3',
-  BOT_VERSION: process.env.BOT_VERSION || '3.0.0'
+  OWNER_NAME: process.env.OWNER_NAME || 'CyberBot Owner',
+
+  BOT_NAME: process.env.BOT_NAME || 'CyberBot',
+  BOT_VERSION: process.env.BOT_VERSION || '4.0.0'
 }
 
 export default CONFIG
